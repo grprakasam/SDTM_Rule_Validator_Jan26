@@ -1,0 +1,74 @@
+[
+  {
+    "id": "DM001",
+    "domain": "DM",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject unique identifier is required"
+  },
+  {
+    "id": "DM005",
+    "domain": "DM",
+    "variable": "SEX",
+    "condition": "SEX not in {'M','F','U'}",
+    "severity": "ERROR",
+    "message": "Sex must be M (Male), F (Female), or U (Unknown)"
+  },
+  {
+    "id": "VS001",
+    "domain": "VS",
+    "variable": "VSSTRESN",
+    "condition": "VSSTRESN > 180",
+    "severity": "WARNING",
+    "message": "Systolic BP >180 mmHg - verify if clinically significant"
+  },
+  {
+    "id": "DM001_1",
+    "domain": "DM",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject unique identifier is required"
+  },
+  {
+    "id": "DM002",
+    "domain": "DM",
+    "variable": "AGE",
+    "condition": "AGE > 120",
+    "severity": "ERROR",
+    "message": "Age exceeds biologically plausible maximum (120 years)"
+  },
+  {
+    "id": "DM003",
+    "domain": "DM",
+    "variable": "AGE",
+    "condition": "AGE < 18",
+    "severity": "WARNING",
+    "message": "Pediatric subject - verify protocol eligibility"
+  },
+  {
+    "id": "DM004",
+    "domain": "DM",
+    "variable": "SEX",
+    "condition": "SEX is missing",
+    "severity": "ERROR",
+    "message": "Sex is required for all subjects"
+  },
+  {
+    "id": "DM005_1",
+    "domain": "DM",
+    "variable": "SEX",
+    "condition": "SEX not in {'M','F','U'}",
+    "severity": "ERROR",
+    "message": "Sex must be M (Male), F (Female), or U (Unknown)"
+  },
+  {
+    "id": "DM006",
+    "domain": "DM",
+    "variable": "RFSTDTC",
+    "condition": "RFSTDTC is missing",
+    "severity": "ERROR",
+    "message": "Reference start date is required for all subjects"
+  }
+]

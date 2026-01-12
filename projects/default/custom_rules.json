@@ -1,0 +1,18 @@
+[
+  {
+    "id": "CUSTOM001",
+    "domain": "DM",
+    "variable": "AGE",
+    "condition": "AGE < 18",
+    "severity": "INFO",
+    "message": "Subject age is below 18 years"
+  },
+  {
+    "id": "CUSTOM002",
+    "domain": "AE",
+    "variable": "AESEV",
+    "condition": "AESEV in {'SEVERE'}",
+    "severity": "WARNING",
+    "message": "Severe adverse event reported"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile:*)",
+      "Bash(python:*)",
+      "Bash(if not exist projects mkdir projects)",
+      "Bash(if not exist samples mkdir samples)",
+      "Bash(streamlit:*)",
+      "Bash(taskkill:*)"
+    ]
+  }
+}

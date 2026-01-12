@@ -1,0 +1,10 @@
+[
+  {
+    "id": "CUSTOM001",
+    "domain": "DM",
+    "variable": "AGE",
+    "condition": "AGE < 18",
+    "severity": "INFO",
+    "message": "Patient under 18"
+  }
+]

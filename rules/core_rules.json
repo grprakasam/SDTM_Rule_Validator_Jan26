@@ -1,0 +1,322 @@
+[
+  {
+    "id": "CORE001",
+    "domain": "DM",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject unique identifier (USUBJID) is required for all subjects"
+  },
+  {
+    "id": "CORE002",
+    "domain": "DM",
+    "variable": "STUDYID",
+    "condition": "STUDYID is missing",
+    "severity": "ERROR",
+    "message": "Study identifier (STUDYID) is required"
+  },
+  {
+    "id": "CORE003",
+    "domain": "DM",
+    "variable": "SUBJID",
+    "condition": "SUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject identifier (SUBJID) is required"
+  },
+  {
+    "id": "CORE004",
+    "domain": "DM",
+    "variable": "RFSTDTC",
+    "condition": "RFSTDTC is missing",
+    "severity": "ERROR",
+    "message": "Reference start date (RFSTDTC) is required"
+  },
+  {
+    "id": "CORE005",
+    "domain": "DM",
+    "variable": "SITEID",
+    "condition": "SITEID is missing",
+    "severity": "WARNING",
+    "message": "Site identifier (SITEID) should be populated"
+  },
+  {
+    "id": "CORE006",
+    "domain": "DM",
+    "variable": "AGE",
+    "condition": "AGE > 120",
+    "severity": "ERROR",
+    "message": "Age exceeds biologically plausible maximum (120 years)"
+  },
+  {
+    "id": "CORE007",
+    "domain": "DM",
+    "variable": "AGE",
+    "condition": "AGE < 0",
+    "severity": "ERROR",
+    "message": "Age cannot be negative"
+  },
+  {
+    "id": "CORE008",
+    "domain": "DM",
+    "variable": "SEX",
+    "condition": "SEX is missing",
+    "severity": "ERROR",
+    "message": "Sex is required per CDISC SDTM IG"
+  },
+  {
+    "id": "CORE009",
+    "domain": "DM",
+    "variable": "RACE",
+    "condition": "RACE is missing",
+    "severity": "WARNING",
+    "message": "Race should be collected per protocol requirements"
+  },
+  {
+    "id": "CORE010",
+    "domain": "DM",
+    "variable": "COUNTRY",
+    "condition": "COUNTRY is missing",
+    "severity": "WARNING",
+    "message": "Country of site is recommended for multi-country studies"
+  },
+  {
+    "id": "CORE011",
+    "domain": "AE",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject identifier required for all adverse event records"
+  },
+  {
+    "id": "CORE012",
+    "domain": "AE",
+    "variable": "AETERM",
+    "condition": "AETERM is missing",
+    "severity": "ERROR",
+    "message": "Adverse event verbatim term (AETERM) is required"
+  },
+  {
+    "id": "CORE013",
+    "domain": "AE",
+    "variable": "AESTDTC",
+    "condition": "AESTDTC is missing",
+    "severity": "ERROR",
+    "message": "Adverse event start date (AESTDTC) is required"
+  },
+  {
+    "id": "CORE014",
+    "domain": "AE",
+    "variable": "AESER",
+    "condition": "AESER is missing",
+    "severity": "WARNING",
+    "message": "Serious AE flag (AESER) should be populated for all AEs"
+  },
+  {
+    "id": "CORE015",
+    "domain": "AE",
+    "variable": "AESEV",
+    "condition": "AESEV is missing",
+    "severity": "WARNING",
+    "message": "Adverse event severity (AESEV) should be assessed"
+  },
+  {
+    "id": "CORE016",
+    "domain": "AE",
+    "variable": "AEREL",
+    "condition": "AEREL is missing",
+    "severity": "WARNING",
+    "message": "Relationship to study drug (AEREL) should be assessed"
+  },
+  {
+    "id": "CORE017",
+    "domain": "AE",
+    "variable": "AEOUT",
+    "condition": "AEOUT in {'FATAL'}",
+    "severity": "ERROR",
+    "message": "Fatal adverse event - verify SAE reporting and documentation completed"
+  },
+  {
+    "id": "CORE018",
+    "domain": "LB",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject identifier required for all laboratory records"
+  },
+  {
+    "id": "CORE019",
+    "domain": "LB",
+    "variable": "LBTESTCD",
+    "condition": "LBTESTCD is missing",
+    "severity": "ERROR",
+    "message": "Laboratory test code (LBTESTCD) is required"
+  },
+  {
+    "id": "CORE020",
+    "domain": "LB",
+    "variable": "LBTEST",
+    "condition": "LBTEST is missing",
+    "severity": "ERROR",
+    "message": "Laboratory test name (LBTEST) is required"
+  },
+  {
+    "id": "CORE021",
+    "domain": "LB",
+    "variable": "LBDTC",
+    "condition": "LBDTC is missing",
+    "severity": "ERROR",
+    "message": "Laboratory specimen collection date (LBDTC) is required"
+  },
+  {
+    "id": "CORE022",
+    "domain": "LB",
+    "variable": "LBORRESU",
+    "condition": "LBORRESU is missing",
+    "severity": "WARNING",
+    "message": "Original laboratory units (LBORRESU) should be populated"
+  },
+  {
+    "id": "CORE023",
+    "domain": "VS",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject identifier required for all vital signs records"
+  },
+  {
+    "id": "CORE024",
+    "domain": "VS",
+    "variable": "VSTESTCD",
+    "condition": "VSTESTCD is missing",
+    "severity": "ERROR",
+    "message": "Vital signs test code (VSTESTCD) is required"
+  },
+  {
+    "id": "CORE025",
+    "domain": "VS",
+    "variable": "VSTEST",
+    "condition": "VSTEST is missing",
+    "severity": "ERROR",
+    "message": "Vital signs test name (VSTEST) is required"
+  },
+  {
+    "id": "CORE026",
+    "domain": "VS",
+    "variable": "VSDTC",
+    "condition": "VSDTC is missing",
+    "severity": "ERROR",
+    "message": "Vital signs collection date (VSDTC) is required"
+  },
+  {
+    "id": "CORE027",
+    "domain": "EX",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject identifier required for all exposure records"
+  },
+  {
+    "id": "CORE028",
+    "domain": "EX",
+    "variable": "EXTRT",
+    "condition": "EXTRT is missing",
+    "severity": "ERROR",
+    "message": "Treatment name (EXTRT) is required for exposure records"
+  },
+  {
+    "id": "CORE029",
+    "domain": "EX",
+    "variable": "EXSTDTC",
+    "condition": "EXSTDTC is missing",
+    "severity": "ERROR",
+    "message": "Exposure start date (EXSTDTC) is required"
+  },
+  {
+    "id": "CORE030",
+    "domain": "EX",
+    "variable": "EXDOSE",
+    "condition": "EXDOSE is missing",
+    "severity": "WARNING",
+    "message": "Exposure dose should be documented when applicable"
+  },
+  {
+    "id": "CORE031",
+    "domain": "CM",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject identifier required for all concomitant medication records"
+  },
+  {
+    "id": "CORE032",
+    "domain": "CM",
+    "variable": "CMTRT",
+    "condition": "CMTRT is missing",
+    "severity": "ERROR",
+    "message": "Concomitant medication name (CMTRT) is required"
+  },
+  {
+    "id": "CORE033",
+    "domain": "MH",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject identifier required for all medical history records"
+  },
+  {
+    "id": "CORE034",
+    "domain": "MH",
+    "variable": "MHTERM",
+    "condition": "MHTERM is missing",
+    "severity": "ERROR",
+    "message": "Medical history term (MHTERM) is required"
+  },
+  {
+    "id": "CORE035",
+    "domain": "DS",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject identifier required for all disposition records"
+  },
+  {
+    "id": "CORE036",
+    "domain": "DS",
+    "variable": "DSDECOD",
+    "condition": "DSDECOD is missing",
+    "severity": "ERROR",
+    "message": "Disposition event term (DSDECOD) is required"
+  },
+  {
+    "id": "CORE037",
+    "domain": "DS",
+    "variable": "DSSTDTC",
+    "condition": "DSSTDTC is missing",
+    "severity": "WARNING",
+    "message": "Disposition event start date should be recorded"
+  },
+  {
+    "id": "CORE038",
+    "domain": "SV",
+    "variable": "USUBJID",
+    "condition": "USUBJID is missing",
+    "severity": "ERROR",
+    "message": "Subject identifier required for all subject visit records"
+  },
+  {
+    "id": "CORE039",
+    "domain": "SV",
+    "variable": "VISITNUM",
+    "condition": "VISITNUM is missing",
+    "severity": "ERROR",
+    "message": "Visit number (VISITNUM) is required"
+  },
+  {
+    "id": "CORE040",
+    "domain": "SV",
+    "variable": "VISIT",
+    "condition": "VISIT is missing",
+    "severity": "ERROR",
+    "message": "Visit name (VISIT) is required"
+  }
+]
